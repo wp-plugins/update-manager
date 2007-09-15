@@ -1,6 +1,6 @@
 === Update Manager ===
 Contributors: mutube
-Donate link: http://www.mutube.com/about/be-nice/
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=martin%2efitzpatrick%40gmail%2ecom&item_name=Donation%20to%20mutube%2ecom&currency_code=USD&bn=PP%2dDonationsBF&charset=UTF%2d8
 Tags: update, manager, plugin, widget, automatic
 Requires at least: 2.0.2
 Tested up to: 2.2

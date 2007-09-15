@@ -188,14 +188,14 @@ function updatem_init() {
 							
 					//REQUEST UPDATED DATA
 					//First attempt, to use dir-name of the plugin to find plugins (more accurate)
-					$data = fetch_url ( 'http://wp-plugins.net/get_plugin_data.php?filter=' . urlencode($dir_name) );
+					$data = updatem_fetch_url ( 'http://wp-plugins.net/get_plugin_data.php?filter=' . urlencode($dir_name) );
 
 					//If that fails, re-request using the plugin's homepage to get a full list to parse
 					if ($data=='a:0:{}'){ 
 						/* Extract plugin host from Title URL */
 						sscanf($plugin_data['Title'], '<a href="http://%[^/"]s',$plugin_data['Hostname']);
 						if($plugin_data['Hostname']!='')
-							{ $data = fetch_url ( 'http://wp-plugins.net/get_plugin_data.php?filter=' . $plugin_data['Hostname'] ); }
+							{ $data = updatem_fetch_url ( 'http://wp-plugins.net/get_plugin_data.php?filter=' . $plugin_data['Hostname'] ); }
 					}
 
 					$plugins_request_success_this=false;
